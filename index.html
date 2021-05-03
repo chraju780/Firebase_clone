@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/85dac19218.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar col-2">
+            <div class="head">
+                <img src="logo.png" alt="" class="col-3"><p id="firebase" class="col-2 d-flex align-content-center" style="color: white; text-align: center;"> Firebase</p>
+            </div>
+            <div class="projectoverview">
+                <a href="#" ><i class="fas fa-home"></i><p style="display: inline-block; font-size: 18px; font-weight: 600; line-height: 80px; color: white;">Project Overview</p></a>
+            </div>
+            <ul >
+                <li >
+                    <a href="#"><p id="build" style="margin-bottom: 0px;">Build</p></a>
+                        <ul>
+                            <li><a href="#" ><i class="fas fa-user-friends"  ></i>Authentication</a></li>
+                            <li><a href="#" ><i class="fas fa-fire"></i>Firestore</a></li>
+                            <li><a href="#" ><i class="fas fa-server"></i>Realtime Database</a></li>
+                            <li><a href="#"><i class="fas fa-folder"></i>Storage</a></li>
+                            <li><a href="#"><i class="fas fa-globe-americas"></i>Hosting</a></li>
+                            <li><a href="#"><i class="fas fa-code"></i>Functions</a></li>
+                            <li><a href="#"><i class="fas fa-robot"></i>Machine Learning</a></li>
+                            <li><a href="#"><i class="fas fa-signal"></i>dashboard</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="main_content ">
+            <div class="info">
+                <div class="top d-flex d-inline-block">
+                    <div class="col1 d-flex flex-row ">
+                        <div class=" position-relative sticky-md-top dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Schemax
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">See all projects</a></li>
+                            <li><a class="dropdown-item" href="#">Add a project</a></li>
+                            <hr>
+                            <li><a class="dropdown-item disabled" href="#" >All Projects</a></li>
+                            <li><a class="dropdown-item" href="#">Schemax</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img  id="abc" src="dashboard.png"  height="522px" alt="">
+                    <div class=" col2 d-flex d-inline-block col-11 " >
+                        <div class="text  d-flex flex-column">
+                            <p>
+                                <p style="padding-bottom: 80px; font-size: 3.6em; ">Analytics</p>
+                                <p style="padding-bottom: 0px;margin: 0px;line-height: normal; ">Get detailed analytics to measure and <br>
+                                analyze how users engage with your apps</p>
+                                <div >
+                                    <input  id="button" type="button" value="Enable Google Analytics">
+                                </div>
+                            </p>
+                        </div>
+                        <div class=" icons d-flex">
+                            <ul class="d-flex">
+                                <li ><a href="#">Go to docs</a></li>
+                                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                                <li><a href="#"><i class="fas fa-circle"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="middle ">
+                <h3>Learn more</h3>
+                <div class="middle_main d-flex ">
+                    <div class=" middle_list col-4">
+                        <ul>
+                            <li><a href="#">
+                                <div class="d-flex">
+                                    <i class="fas fa-cog"></i>
+                                    <div class="d-flex flex-column">
+                                        <p id="top">How do I get started</p>
+                                        <p id="bottom">view the docs</p>
+                                    </div>
+                                </div></a>
+                            </li>
+                            <li><a href="#">
+                                <div class="d-flex">
+                                    <i class="fas fa-info-circle"></i>
+                                    <div class="d-flex flex-column">
+                                        <p id="top">How do analytics work?</p>
+                                        <p id="bottom" >view the docs</p>
+                                    </div>    
+                                </div></a>
+                            </li>
+                            <li><a href="#">
+                                <div class="d-flex ">
+                                    <i class="fas fa-grin-alt"></i>
+                                    <div class="d-flex flex-column">
+                                        <p id="top">What can analytics do for me?</p>
+                                        <p id="bottom">Learn more</p>
+                                    </div>
+                                </div></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="video ">
+                        <iframe width="750px" height="340px" src="https://www.youtube.com/embed/8iZpH7O6zXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-bottom:4px solid rgb(183, 63, 219); border-radius: 10px;"></iframe>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h3>More features for develpoers</h3>
+                    <div class="cards d-flex "> 
+                            <div class="predections col-4 ">
+                                <div class="content d-inline-block">
+                                    <p id="head">predictions</p>
+                                    <p id="bottom1">Act on predicted user behavior</p>
+                                </div>
+                            </div>
+                        <div class="config col-4 ">
+                            <div class="content d-inline-block">
+                                <p id="head">Remote Config</p>
+                                <p id="bottom1">Coustomize and experiment with app </p>
+                                <p id="bottom2">behavior</p>
+                            </div>
+                        </div>
+                        <div class="dynamiclinks col-3">
+                            <div class="content d-inline-block">
+                                <p id="head">Dynamic Links</p>
+                                <p id="bottom1">Deep link potential users to the right place</p>
+                                <p id="bottom2">inside your app</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: right;padding-top: 20px; font-family: sans-serif; font-size: medium; font-weight: 400;"><a href="#" style="font-weight: 600; font-size: 20px;">See all Engage feartres</a></div>
+                </div>
+            </div>
+            <br>
+            <br><br><br>
+            <div class="bottom d-block">
+                <div class="btext d-inline">
+                    <a href=""><p style="margin-bottom: 0px; font-size: 20px;">See all Firebase features<i class="fas fa-arrow-right"></i></p></a>
+                </div>
+            </div>
+        </div>     
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
